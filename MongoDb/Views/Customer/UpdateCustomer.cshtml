@@ -1,0 +1,21 @@
+﻿@model MongoDb.Dtos.CustomerDtos.GetByIdCustomerDto
+@{
+    Layout = "~/Views/Default/LayoutIndex.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <div class="alert alert-info">Ürün Güncelleme Sayfası</div>
+        <label>müşteri Id</label>
+        <input type="hidden" asp-for="CustomerId" readonly class="form-control" />
+        <br />
+        <label>Müşteri Adı</label>
+        <input type="text" asp-for="CustomerName" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Ürünü Kaydet</button>
+    </form>
+</div>
+

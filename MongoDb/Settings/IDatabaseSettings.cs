@@ -5,7 +5,9 @@
         
             string CategoryCollectionName { get; set; }
             string ProductCollectionName { get; set; }
-            string ConnectionString { get; set; }
+            string CustomerCollectionName { get; set; }
+         string OrderCollectionName { get; set; }
+        string ConnectionString { get; set; }
             string DatabaseName { get; set; }
         
     }

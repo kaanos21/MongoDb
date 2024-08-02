@@ -1,0 +1,28 @@
+﻿@model MongoDb.Dtos.OrderDtos.GetByIdOrderDto
+@{
+    Layout = "~/Views/Default/LayoutIndex.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="OrderId" />
+        <div class="alert alert-info">Yeni Sipariş Ekleme Sayfası</div>
+        <label>Müşteri Id</label>
+        <input type="text" asp-for="CustomerId" class="form-control" />
+        <br />
+        <label>Ürün Id</label>
+        <input type="text" asp-for="ProductId" class="form-control" />
+        <br />
+        <label>Ürün Stok Sayısı</label>
+        <input type="text" asp-for="Quantity" class="form-control" />
+        <br />
+        <label>Ürün sipariş tarihi</label>
+        <input type="text" asp-for="OrderDate" class="form-control" />
+        <br />
+        <button class="btn btn-primary">siparişi Oluştur</button>
+    </form>
+</div>
+

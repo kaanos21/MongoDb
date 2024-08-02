@@ -1,0 +1,22 @@
+﻿@model MongoDb.Dtos.CustomerDtos.CreateCustomerDto
+@{
+    Layout = "~/Views/Default/LayoutIndex.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <div class="alert alert-info">Yeni Müşteri Ekleme Sayfası</div>
+        <label>Müşteri ismi</label>
+        <input type="text" asp-for="CustomerName" class="form-control" />
+        <br />
+        <label>Bakiye</label>
+        <input type="text" asp-for="Money" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Müşteriyi Oluştur</button>
+    </form>
+</div>
+
+

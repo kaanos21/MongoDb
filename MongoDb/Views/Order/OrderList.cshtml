@@ -1,0 +1,35 @@
+﻿@model List<MongoDb.Dtos.OrderDtos.ResultOrderDto>
+@{
+    ViewData["Title"] = "OrderList";
+    Layout = "~/Views/Default/LayoutIndex.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <table class="table table-hover">
+        <tr>
+            <th>Sipariş Id</th>
+            <th>Müşteri Id</th>
+            <th>Ürün Id</th>
+            <th>Ürün Stok Sayısı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OrderId</td>
+                <td>@item.CustomerId</td>
+                <td>@item.ProductId</td>
+                <td>@item.Quantity</td>
+                <td>@item.OrderDate</td>
+                <td><a href="/Order/DeleteOrder/@item.OrderId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Order/UpdateOrder/@item.OrderId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Order/CreateOrder/" class="btn btn-info">Yeni Ürün Girişi</a>
+</div>
+
