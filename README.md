@@ -38,4 +38,5 @@ MongoDB Projesi, .NET Core 6.0 kullanılarak geliştirilmiş bir uygulamadır. B
 
 ## SOLID Prensipleri
 
+
 Projede SOLID prensiplerine uygun olarak geliştirme yapılmıştır.
